@@ -1,54 +1,76 @@
-# 🚢 Titanic Survival Analysis — Exploratory Data Analysis (EDA)
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"/>
-  <img src="https://img.shields.io/badge/Seaborn-41B4BD?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn"/>
-</p>
+# EDA on Titanic Survival Dataset
+
+This project performs **Exploratory Data Analysis (EDA)** on the Titanic dataset to uncover patterns and insights about passenger survival. The dataset contains demographic and socio-economic details such as age, gender, passenger class, and fare.
+
+---
+
+## 📌 Objectives
+- Clean and preprocess the Titanic dataset  
+- Handle missing values and outliers  
+- Perform descriptive statistics and feature analysis  
+- Visualize key patterns using plots and graphs  
+- Derive insights on which factors influenced passenger survival  
+
+---
+
+## 📊 Tools & Libraries
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib & Seaborn  
+- Jupyter Notebook  
+
+---
+
+## 📈 Key Insights
+- Female passengers had higher survival rates compared to males  
+- First-class passengers had better survival chances than third-class  
+- Younger passengers survived more often than older ones  
+- High ticket fares correlated with higher survival probability  
+
+---
+
+## 📷 Sample Visualizations
+
+### Age Distribution
+![Age Distribution](EDA_on_Titanic_Survival_main/Output_graphs/Age-Distribution.png)
+
+### Age vs Survival
+![Age vs Survival](EDA_on_Titanic_Survival_main/Output_graphs/Age-vs-Survival.png)
+
+### Correlation Heatmap
+![Correlation Heatmap](EDA_on_Titanic_Survival_main/Output_graphs/Correlation-heatmap.png)
+
+### Survival Count
+![Survival Count](EDA_on_Titanic_Survival_main/Output_graphs/Survial-count.png)
+
+### Survival by Passenger Class
+![Survival by Passenger Class](EDA_on_Titanic_Survival_main/Output_graphs/Survival-by-passenger-class.png)
+
+### Survival by Sex
+![Survival by Sex](EDA_on_Titanic_Survival_main/Output_graphs/Survival-by-sex.png)
+
+### Pairplot
+![Pairplot](EDA_on_Titanic_Survival_main/Output_graphs/pairplot.png)
+
+---
+
+## 🚀 How to Run
+1. Clone the repository:
+```bash
+git clone https://github.com/Chethana-git/EDA_on_Titanic_Survival.git
+cd EDA_on_Titanic_Survival
+pip install -r requirements.txt
 
 
-🚢 EDA on Titanic Survival
 
-This project performs Exploratory Data Analysis (EDA) on the Titanic dataset to uncover key patterns that influenced passenger survival.
-
-The analysis includes:
-Cleaning missing data (Age, Embarked, dropping Cabin).
-Encoding categorical features (Sex, Embarked).
-Creating clear, aesthetic visualizations with Seaborn & Matplotlib.
-An interactive graph navigation system (Next / Previous buttons) so all plots can be explored in one window.
-
-📊 Visualizations
-
-The following insights are displayed:
-Overall Survival Count – Survivors vs. Non-survivors.
-Survival by Sex – Comparing male vs. female survival rates.
-Survival by Passenger Class – Class differences in survival chances.
-Age Distribution by Survival – Younger passengers had better odds.
-Fare Distribution by Survival – Higher fare correlated with survival.
-Correlation Heatmap – Relationships between numeric features.
-
-⚙️ Tools Used
-
-Python
-
-Pandas, NumPy – data wrangling
-Matplotlib, Seaborn – visualizations
-Matplotlib Widgets – interactive Next/Previous navigation
-
-🚀 Running the Project
-# Install dependencies
-pip install pandas numpy matplotlib seaborn
-
-# Run the script
-python Titanic-EDA.py
-
-
-👉 The program opens a single interactive window. Use the Next ▶ / ◀ Previous buttons to cycle through the graphs.
-
-📈 Key Findings
-
-Females had much higher survival rates than males.
-1st Class passengers were most likely to survive.
-Younger passengers (children) had higher chances.
-Higher ticket fare correlated positively with survival.
+EDA_on_Titanic_Survival/
+│
+├─ EDA_on_Titanic_Survival_main/
+│   ├─ Output_graphs/           # All screenshots
+│   ├─ Titanic-EDA.py           # Main EDA script
+│   ├─ README.md                # Internal folder README (optional)
+│   └─ train.csv                # Dataset
+├─ README.md                    # Main README
+├─ requirements.txt             # Python dependencies
+└─ .gitignore                   # Ignore files like __pycache__, etc.
